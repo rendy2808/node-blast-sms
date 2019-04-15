@@ -1,0 +1,35 @@
+<% include head %> 
+
+<body>
+<div class="container">
+  <div class="jumbotron mt-3">
+    <h1>BLAST!</h1>
+    <br>
+    <h2>Message sending in progress</h2>
+    <h3>with message</h3>
+    <div class="col-3">
+        <textarea class="form-control" rows="5"><%=message%></textarea>
+    </div>
+    <table class="table">
+            <thead class="thead-light">
+              <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Phone</th>
+              </tr>
+            </thead>
+            <tbody>
+            <% for(var i = 0; i < result.length;i++){%>
+              <tr>
+                <td><%=result[i].name%></td>
+                <td><%=result[i].phone%></td>
+              </tr>
+            <%}%>
+             
+            </tbody>
+          </table>
+</div>
+</div>
+
+
+
+

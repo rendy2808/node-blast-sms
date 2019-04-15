@@ -1,0 +1,33 @@
+<% include head %> 
+
+<body>
+<div class="container">
+  <div class="jumbotron mt-3">
+    <h1>BLAST!</h1>
+    <br>
+    <form action="/blast/blast" method="post" enctype="multipart/form-data">
+    <div class="col-3">
+        <h5>User ID</h5>
+        <input type="text" class="form-control" name="user_id">
+    </div>
+    <div class="col-5">
+        <h5>Message</h5>
+            <textarea class="form-control" rows="5" name="message"></textarea>
+    </div><br>
+    <div class="col-5">
+      <h5>Upload File</h5>
+    <!-- <form action="/blast/export" method="post" enctype="multipart/form-data"> -->
+            <input type="file" name="fileup"><br>
+            <!-- <input type="submit"> -->
+        <!-- </form> -->
+      </div><br>
+    <div class="col-3">
+        <button type="submit" class="btn btn-lg btn-primary"  role="button">Sent! &raquo;</button>
+    </div>
+  </form>
+</div>
+</div>
+
+
+
+
